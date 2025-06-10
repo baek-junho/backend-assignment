@@ -139,8 +139,8 @@ def issue_to_dict(issue):
         'title': issue.title,
         'description': issue.description,
         'status': issue.status.value,
-        'createdAt': issue.created_at.isoformat() + 'Z',
-        'updatedAt': issue.updated_at.isoformat() + 'Z',
+        'createdAt': issue.created_at.strftime('%Y-%m-%d %H:%M:%S'),
+        'updatedAt': issue.updated_at.strftime('%Y-%m-%d %H:%M:%S'),
     }
     if issue.user:
         result['user'] = {'id': issue.user.id, 'name': issue.user.name}

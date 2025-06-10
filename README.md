@@ -60,9 +60,9 @@ python app.py
 - **Request Body** (JSON):
   ```json
   {
-    "title": "버그 수정 필요",      # 필수
-    "description": "로그인 오류 발생",  # 선택
-    "userId": 1                     # 선택
+    "title": "버그 수정 필요",          #필수
+    "description": "로그인 오류 발생",  #선택
+    "userId": 1                        #선택
   }
   ```
 - **Example**:

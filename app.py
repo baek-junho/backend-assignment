@@ -23,7 +23,7 @@ class User(db.Model):
     name = db.Column(db.String, nullable=False)
 
 class Issue(db.Model):
-    id = db.Column(db.Integer, Primary_key=True)
+    id = db.Column(db.Integer, primary_key=True) 
     title = db.Column(db.String, nullable=False)
     description = db.Column(db.String)
     status = db.Column(db.Enum(StatusEnum), nullable=False)
